@@ -1,0 +1,1 @@
+This is a sample angular 2 application created by following the tutorial in angular.io. The motive of this project is to revisit and get comfortable with the core fundamentals of Angular 2.
