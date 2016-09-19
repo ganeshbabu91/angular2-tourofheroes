@@ -9,13 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Hero = (function () {
+    function Hero() {
+    }
+    return Hero;
+}());
+exports.Hero = Hero;
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Tour of Heroes';
+        this.hero = {
+            id: 1,
+            name: 'Windstorm'
+        };
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'angular2-heroes',
-            template: '<h1>Angular2 Tour of Heroes</h1>'
+            template: "\n\t\t<h1>{{title}}</h1>\n\t\t<h2>{{hero.name}} details!</h2>\n\t\t<div><label>id: </label>{{hero.id}}</div>\n  \t\t<div>\n  \t\t\t<label>name: </label>\n  \t\t\t<!-- ONE WAY BINDING -->\n  \t\t\t<!-- <input value=\"{{hero.name}}\" placeholder=\"name\"> -->\n  \t\t\t<!-- TWO WAY BINDING -->\n  \t\t\t<input [(ngModel)]=\"hero.name\" name=\"name\" placeholder=\"name\">\n  \t\t</div>"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
